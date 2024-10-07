@@ -1,37 +1,39 @@
 /** @format */
+
 /** Region JQuery sakura */
 $(function () {
-	$("body").sakura();
+	$("body")?.sakura();
 });
 
-$(window).load(function () {
-	$("body").sakura();
+$(window).on("load", function () {
+	$("body")?.sakura();
 });
 /** Endregion JQuery sakura */
 
 /** Region fireworks-js */
-const fireworks = new Fireworks($("#fireworksJS"), {
-	autoresize: true, // Tự động thay đổi kích thước khi kích thước của container thay đổi
-	opacity: 0.5, // Độ mờ
-	acceleration: 1.0, // Gia tốc
-	friction: 0.95, // Ma sát ảnh hưởng đến chuyển động
-	gravity: 1.5, // Lực hấp dẫn tác động lên pháo hoa
-	particles: 50, // Số lượng hạt pháo hoa
-	traceLength: 1, // Độ dài vệt
-	traceSpeed: 10, // Tốc độ vệt
-	explosion: 5, // Độ lớn của vụ nổ
-	intensity: 20, // Cường độ
-	flickering: 50, // Mức độ nhấp nháy
-	lineStyle: "round", // Kiểu đường vẽ của pháo hoa
-
-	brightness: { min: 0, max: 100 },
-	decay: { min: 0.001, max: 0.05 },
-	delay: { min: 10.0, max: 100.0 },
-	hue: { min: 0, max: 360 },
-	lineWidth: { explosion: { min: 1, max: 3 }, trace: { min: 1, max: 2 } },
-	mouse: { click: true, move: false, max: 1 },
-	rocketsPoint: { min: 50, max: 50 },
-});
+const fireworksContainer = document.querySelector(".fireworks");
+const fireworks = new Fireworks.default(fireworksContainer);
+fireworks.opts.acceleration = 1.0; // Gia tốc
+fireworks.opts.autoresize = true; // Tự động thay đổi kích thước khi kích thước của container thay đổi
+fireworks.opts.brightness = { min: 0, max: 100 }; // Độ sáng
+fireworks.opts.decay = { min: 0.001, max: 0.05 }; // Tốc độ tàn lụi
+fireworks.opts.delay = { min: 10.0, max: 100.0 }; // Khoảng thời gian giữa các vụ nổ
+fireworks.opts.explosion = 5; // Độ lớn của vụ nổ
+fireworks.opts.flickering = 50; // Mức độ nhấp nháy
+fireworks.opts.friction = 0.95; // Ma sát ảnh hưởng đến chuyển động
+fireworks.opts.gravity = 1.5; // Lực hấp dẫn tác động lên pháo hoa
+fireworks.opts.hue = { min: 0, max: 360 }; // Phạm vi màu sắc của pháo hoa
+fireworks.opts.intensity = 20; // Cường độ
+fireworks.opts.lineStyle = "round"; // Kiểu đường vẽ của pháo hoa
+fireworks.opts.mouse = { click: true, move: false, max: 1 }; // Cấu hình tương tác chuột
+fireworks.opts.opacity = 0.5; // Độ mờ
+fireworks.opts.particles = 50; // Số lượng hạt pháo hoa
+fireworks.opts.rocketsPoint = { min: 0, max: 100 }; // Điểm xuất phát
+fireworks.opts.traceLength = 1; // Độ dài vệt
+fireworks.opts.traceSpeed = 10; // Tốc độ vệt
+fireworks.opts.lineWidth = {
+	explosion: { min: 0, max: 3 }, // Độ rộng của đường vẽ cho vụ nổ
+	trace: { min: 0, max: 2 }, // Độ rộng của đường vẽ cho vệt
+};
 fireworks.start();
-
 /** Endregion fireworks-js */
