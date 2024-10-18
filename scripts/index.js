@@ -1,5 +1,12 @@
 /** @format */
 
+/** Region đọc cấu hình */
+$.getJSON("../resources/datas/index.json", (data) => {
+	console.log(data);
+	debugger;
+});
+/** Endregion đọc cấu hình */
+
 /** Region JQuery sakura */
 $(function () {
 	$("body")?.sakura();
@@ -50,3 +57,6 @@ const wowJS = new WOW({
 });
 wowJS.init();
 /** Endregion WowJS */
+
+/** Region ảnh nền */
+/** Endregion ảnh nền */
