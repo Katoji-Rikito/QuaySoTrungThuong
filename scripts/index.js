@@ -42,7 +42,7 @@ if (fireworksContainer) {
 
 /** Region WowJS */
 const wowJS = new WOW({
-	boxClass: "wow", // Tên class hiển thị hộp ẩn khi người dùng cuộn
+	boxClass: "ohMyGow", // Tên class hiển thị hộp ẩn khi người dùng cuộn
 	animateClass: "animated", // Tên class kích hoạt hoạt ảnh CSS ("animated" theo mặc định cho thư viện animate.css)
 	offset: 0, // Xác định khoảng cách giữa phần dưới cùng của khung nhìn trình duyệt và phần trên cùng của hộp ẩn. Khi người dùng cuộn và đạt đến khoảng cách này, hộp ẩn sẽ lộ ra.
 	mobile: true, // Bật/tắt wow.js trên thiết bị di động
