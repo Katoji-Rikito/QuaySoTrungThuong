@@ -1,8 +1,9 @@
 {
 	"CFG_Background": "bg-main1.jpg",
 	"CFG_CurrentYear": "2025",
-	"MSG_Welcome": "Công ty TNHH Rorze Robotech",
-	"MSG_WelcomeLong": "Công ty TNHH Rorze Robotech long",
+	"MSG_NameCompany": "NameCompany",
+	"MSG_WelcomeShort": "WelcomeShort",
+	"MSG_WelcomeLong": "WelcomeLong",
 	"listStaff": {
 		"1": "Nguyễn Văn A",
 		"2": "Nguyễn Văn B",

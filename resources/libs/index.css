@@ -1,6 +1,6 @@
 /** @format */
 body {
-	background-image: url("../resources/images/bg-main1.jpg");
+	background-image: url("../images/bg-main1.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	/* background-size: 100% 100%; */
@@ -36,8 +36,7 @@ body {
 	animation-direction: normal; /* Hướng chạy */
 	animation-timing-function: ease; /* Hiệu ứng hoạt ảnh */
 	animation-fill-mode: both; /* Style áp dụng khi chạy hoạt ảnh */
-
-	background-size: 300% 100%; /* Kích thước nền gradient */
+	background-size: 200% 100%; /* Kích thước nền gradient */
 }
 
 @keyframes rainbowHighlightAnimation {

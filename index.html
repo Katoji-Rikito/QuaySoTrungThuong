@@ -5,9 +5,6 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" /> -->
-		<!-- <meta http-equiv="Pragma" content="no-cache" /> -->
-		<!-- <meta http-equiv="Expires" content="0" /> -->
 		<link
 			rel="icon"
 			type="image/x-icon"
@@ -16,16 +13,20 @@
 		<link
 			type="text/css"
 			rel="stylesheet"
-			href="./styles/jquery-sakura.min.css" />
+			href="./resources/libs/jquery-sakura/css/jquery-sakura.min.css" />
 		<link
 			type="text/css"
 			rel="stylesheet"
-			href="./styles/animate-3.7.2.min.css" />
+			href="./resources/libs/animate-3.7.2.min.css" />
 		<link
 			type="text/css"
 			rel="stylesheet"
-			href="./styles/bootstrap-5.3.3.min.css" />
-		<link type="text/css" rel="stylesheet" href="./styles/index.css" />
+			href="./resources/libs/bootstrap-5.3.3/css/bootstrap.min.css" />
+		<link
+			type="text/css"
+			rel="stylesheet"
+			href="./resources/libs/fontawesome-6.6.0/css/all.min.css" />
+		<link type="text/css" rel="stylesheet" href="./resources/libs/index.css" />
 	</head>
 	<body>
 		<main class="fireworks">
@@ -34,6 +35,24 @@
 				<!-- data-wow-delay: Thời gian chờ trước khi đối tượng chuyển động -->
 				<!-- data-wow-iteration: Số lần lập lại của một chuyển động -->
 				<!-- data-wow-offset: Khoảng cách giữa đối tượng và điểm cuối màng hình. khi cuộn đến khoảng cách đó, đối tượng sẽ bắt đầu chuyển động -->
+				<h1 id="NameCompany">Name Company</h1>
+				<h3 id="ShortWelcome">Short Welcome</h3>
+				<h5 id="LongWelcome">Long Welcome</h5>
+				<div class="actionMenu">
+					<button><i class="fa-solid fa-bars"></i></button>
+					<div class="actionMenu-items">
+						<button class="actionMenu-item">
+							<i class="fa-solid fa-table-list"></i>
+							<span>Danh sách trúng giải</span>
+						</button>
+						<button class="actionMenu-item">
+							<i class="fa-solid fa-gears"></i>
+							<span>Cấu hình</span>
+						</button>
+					</div>
+				</div>
+
+				<div>Slot-machine wheel will here</div>
 
 				<h3 class="rainbowHighlight">Hello there</h3>
 				<h3 class="ohMyGow fadeInDown" data-wow-duration="2">Hi mom 1</h3>
@@ -42,11 +61,12 @@
 				<h3 class="ohMyGow slideOutDown" data-wow-duration="2">Hi mom 4</h3>
 			</section>
 		</main>
-		<script src="./scripts/jquery-3.7.1.min.js"></script>
-		<script src="./scripts/jquery-sakura.min.js"></script>
-		<script src="./scripts/fireworksjs-2.10.8.umd.js"></script>
-		<script src="./scripts/wow-1.1.2.min.js"></script>
-		<script src="./scripts/bootstrap-5.3.3.bundle.min.js"></script>
-		<script src="./scripts/index.js"></script>
+
+		<script src="./resources/libs/jquery-3.7.1.min.js"></script>
+		<script src="./resources/libs/jquery-sakura/js/jquery-sakura.min.js"></script>
+		<script src="./resources/libs/fireworksjs-2.10.8.umd.js"></script>
+		<script src="./resources/libs/wow-1.1.2.min.js"></script>
+		<script src="./resources/libs/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+		<script src="./resources/libs/index.js"></script>
 	</body>
 </html>
