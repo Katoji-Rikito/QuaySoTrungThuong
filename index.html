@@ -4,12 +4,15 @@
 <html lang="vi">
 	<head>
 		<meta charset="UTF-8" />
+		<meta name="author" content="Hoangthinh99hp@gmail.com" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link
 			rel="icon"
 			type="image/x-icon"
 			href="./resources/images/favicon.ico" />
 		<title>Quay số trúng thưởng</title>
+
+		<!-- Styles -->
 		<link
 			type="text/css"
 			rel="stylesheet"
@@ -26,31 +29,39 @@
 			type="text/css"
 			rel="stylesheet"
 			href="./resources/libs/fontawesome-6.6.0/css/all.min.css" />
-		<link type="text/css" rel="stylesheet" href="./resources/libs/index.css" />
+		<link
+			type="text/css"
+			rel="stylesheet"
+			href="./resources/libs/app/css/index.css" />
 	</head>
 	<body>
-		<main class="fireworks">
-			<section>
+		<header>
+			<h1 id="NameCompany"></h1>
+			<h2 id="Welcome"></h2>
+			<div class="action-menu">
+				<button><i class="fa-solid fa-bars"></i></button>
+				<div class="action-menu-buttons">
+					<div class="menu-button">
+						<span>Quay thưởng</span>
+						<button><i class="fa-solid fa-dice"></i></button>
+					</div>
+					<div class="menu-button">
+						<span>Danh sách trúng giải</span>
+						<button><i class="fa-solid fa-trophy"></i></button>
+					</div>
+					<div class="menu-button">
+						<span>Xoá dữ liệu</span>
+						<button><i class="fa-solid fa-trash-can"></i></button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section id="SlotMachine">
 				<!-- data-wow-duration: Thời gian chuyển động của đối tượng -->
 				<!-- data-wow-delay: Thời gian chờ trước khi đối tượng chuyển động -->
 				<!-- data-wow-iteration: Số lần lập lại của một chuyển động -->
 				<!-- data-wow-offset: Khoảng cách giữa đối tượng và điểm cuối màng hình. khi cuộn đến khoảng cách đó, đối tượng sẽ bắt đầu chuyển động -->
-				<h1 id="NameCompany">Name Company</h1>
-				<h3 id="ShortWelcome">Short Welcome</h3>
-				<h5 id="LongWelcome">Long Welcome</h5>
-				<div class="actionMenu">
-					<button><i class="fa-solid fa-bars"></i></button>
-					<div class="actionMenu-items">
-						<button class="actionMenu-item">
-							<i class="fa-solid fa-table-list"></i>
-							<span>Danh sách trúng giải</span>
-						</button>
-						<button class="actionMenu-item">
-							<i class="fa-solid fa-gears"></i>
-							<span>Cấu hình</span>
-						</button>
-					</div>
-				</div>
 
 				<div>Slot-machine wheel will here</div>
 
@@ -60,13 +71,28 @@
 				<h3 class="ohMyGow slideInDown" data-wow-duration="2">Hi mom 3</h3>
 				<h3 class="ohMyGow slideOutDown" data-wow-duration="2">Hi mom 4</h3>
 			</section>
+			<section id="PrizeList"></section>
 		</main>
+		<footer>
+			<!-- behavior: Xác định kiểu cuộn của dòng chạy. Giá trị: scroll, slide và alternate -->
+			<!-- scrollamount: Xác định tốc độ của dòng chạy -->
+			<!-- vspace: Xác định khoảng cách dọc của dòng chạy -->
+			<!-- hspace: Xác định khoảng cách chiều ngang của dòng chạy -->
+			<marquee
+				id="FooterThongTin"
+				behavior="scroll"
+				scrollamount="7"
+				vspace="0"
+				hspace="0"></marquee>
+		</footer>
 
+		<!-- JavaScripts -->
 		<script src="./resources/libs/jquery-3.7.1.min.js"></script>
 		<script src="./resources/libs/jquery-sakura/js/jquery-sakura.min.js"></script>
 		<script src="./resources/libs/fireworksjs-2.10.8.umd.js"></script>
 		<script src="./resources/libs/wow-1.1.2.min.js"></script>
 		<script src="./resources/libs/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
-		<script src="./resources/libs/index.js"></script>
+		<script src="./resources/libs/app/js/configs.js"></script>
+		<script src="./resources/libs/app/js/index.js"></script>
 	</body>
 </html>
