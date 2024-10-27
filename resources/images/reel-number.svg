@@ -1,0 +1,22 @@
+<svg viewBox="0 0 57 1200" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+    <style>
+      .roboto {
+        font-family: 'Roboto', sans-serif;
+        font-size: 100px;
+        font-weight: 500;
+        stroke-width: 0;
+      }
+    </style>
+  </defs>
+<text class="roboto" transform="translate(0 95.530678)">0</text>
+  <text class="roboto" transform="translate(0 215.530678)">1</text>
+  <text class="roboto" transform="translate(0 335.530678)">2</text>
+  <text class="roboto" transform="translate(0 455.530678)">3</text>
+  <text class="roboto" transform="translate(0 575.530678)">4</text>
+  <text class="roboto" transform="translate(0 695.530678)">5</text>
+  <text class="roboto" transform="translate(0 815.530678)">6</text>
+  <text class="roboto" transform="translate(0 935.530678)">7</text>
+  <text class="roboto" transform="translate(0 1055.530678)">8</text>
+  <text class="roboto" transform="translate(0 1175.530678)">9</text>
+</svg>

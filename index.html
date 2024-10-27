@@ -47,7 +47,13 @@
 					</div>
 					<div class="menu-button">
 						<span>Danh sách trúng giải</span>
-						<button><i class="fa-solid fa-trophy"></i></button>
+						<button
+							type="button"
+							class="btn"
+							data-bs-toggle="modal"
+							data-bs-target="#PrizeList">
+							<i class="fa-solid fa-trophy"></i>
+						</button>
 					</div>
 					<div class="menu-button">
 						<span>Xoá dữ liệu</span>
@@ -57,7 +63,7 @@
 			</div>
 		</header>
 		<main>
-			<section id="SlotMachine">
+			<div id="SlotMachine">
 				<!-- data-wow-duration: Thời gian chuyển động của đối tượng -->
 				<!-- data-wow-delay: Thời gian chờ trước khi đối tượng chuyển động -->
 				<!-- data-wow-iteration: Số lần lập lại của một chuyển động -->
@@ -70,8 +76,30 @@
 				<h3 class="ohMyGow fadeOutDown" data-wow-duration="2">Hi mom 2</h3>
 				<h3 class="ohMyGow slideInDown" data-wow-duration="2">Hi mom 3</h3>
 				<h3 class="ohMyGow slideOutDown" data-wow-duration="2">Hi mom 4</h3>
-			</section>
-			<section id="PrizeList"></section>
+			</div>
+			<div
+				class="modal fade"
+				id="PrizeList"
+				aria-labelledby="PrizeListLabel"
+				aria-hidden="true">
+				<div class="modal-dialog modal-dialog-scrollable modal-xl">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="PrizeListLabel">
+								Danh sách trúng thưởng
+							</h1>
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="modal"
+								aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							Okay, đây sẽ là danh sách trúng thưởng nhé
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
 		<footer>
 			<!-- behavior: Xác định kiểu cuộn của dòng chạy. Giá trị: scroll, slide và alternate -->
@@ -88,10 +116,10 @@
 
 		<!-- JavaScripts -->
 		<script src="./resources/libs/jquery-3.7.1.min.js"></script>
+		<script src="./resources/libs/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
 		<script src="./resources/libs/jquery-sakura/js/jquery-sakura.min.js"></script>
 		<script src="./resources/libs/fireworksjs-2.10.8.umd.js"></script>
 		<script src="./resources/libs/wow-1.1.2.min.js"></script>
-		<script src="./resources/libs/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
 		<script src="./resources/libs/app/js/configs.js"></script>
 		<script src="./resources/libs/app/js/index.js"></script>
 	</body>
