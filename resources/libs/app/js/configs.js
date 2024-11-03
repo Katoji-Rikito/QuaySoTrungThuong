@@ -2,9 +2,14 @@
 
 /** ========= CẤU HÌNH ========= */
 /**
- * Hình nền
+ * Ảnh góc trên bên trái
  */
-const CFG_Background = "bg-main1.jpg";
+const BG_TopLeftCorner = "bg-Corner-top-left.png";
+
+/**
+ * Ảnh góc trên bên phải
+ */
+const BG_TopRightCorner = "bg-Corner-top-right.png";
 
 /**
  * Năm hiện tại
@@ -29,3 +34,4 @@ const TITLE_NameCompany = "NameCompany";
  * Chào mừng (ngắn)
  */
 const TITLE_Welcome = "Welcome to my page!";
+const TITLE_DefaultFooter = `Chào mừng các bạn đã đến với buổi tiệc tất niên ${CFG_CurrentYear} của ${TITLE_NameCompany}!`;

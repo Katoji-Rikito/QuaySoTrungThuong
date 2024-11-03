@@ -1,17 +1,13 @@
 /** @format */
 
 /** Region JQuery sakura */
-$(function () {
-	$("body")?.sakura();
-});
-
-$(window).on("load", function () {
-	$("body")?.sakura();
-});
+const sakura = new Sakura("body", {});
 /** Endregion JQuery sakura */
 
 /** Region FireworksJS */
-const fireworks = new Fireworks.default(document.querySelector("body"));
+const fireworks = new Fireworks.default(
+	document.querySelector(".fireworks-container"),
+);
 fireworks.opts.acceleration = 1.0; // Gia tốc
 fireworks.opts.autoresize = true; // Tự động thay đổi kích thước khi kích thước của container thay đổi
 fireworks.opts.brightness = { min: 0, max: 100 }; // Độ sáng
@@ -51,16 +47,20 @@ wowJS.init();
 /** Region giao diện */
 $("#NameCompany").addClass("text-center").text(TITLE_NameCompany);
 $("#Welcome").addClass("text-center").text(TITLE_Welcome);
+
 document
 	.querySelector(".action-menu > button")
 	.addEventListener("click", () => {
 		document.querySelector(".action-menu").classList.toggle("active");
 	});
+
 /**
  * Thông tin dòng chữ chạy phía dưới
  */
 const footerThongTin = $("#FooterThongTin");
-footerThongTin.append($("<h4>").text("Hi mom"));
+footerThongTin.append(
+	$("<h4>").addClass("text-black").text(TITLE_DefaultFooter),
+);
 /** Endregion giao diện */
 
 /** Region */
